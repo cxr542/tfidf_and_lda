@@ -1,0 +1,28 @@
+import csv
+import string
+
+cw = csv.writer(file('testcsv22.csv', 'w'))
+cw.writerow(['name'])
+homeimprovement=open("auto_home_improvement.txt","r").read()
+homegarden=open("home_garden.txt","r").read()
+mensfashion=open("mensfashion.txt","r").read()
+electronics=open("electronics.txt","r").read()
+womensfashion=open("womensfashion.txt","r").read()
+babykidstoys=open("baby_kids_toys.txt","r").read()
+jewelrywatches=open("jewelry_watches.txt","r").read()
+healthbeauty=open("healthbeauty.txt","r").read()
+sportsoutdoors=open("sports_outdoors.txt","r").read()
+grocery=open("grocery.txt","r").read()
+entertainment=open("entertainment.txt","r").read()
+
+cw.writerow([str(homeimprovement)])
+cw.writerow([str(homegarden)])
+cw.writerow([str(mensfashion)])
+cw.writerow([str(electronics)])
+cw.writerow([str(womensfashion)])
+cw.writerow([str(babykidstoys)])
+cw.writerow([str(jewelrywatches)])
+cw.writerow([str(healthbeauty)])
+cw.writerow([str(sportsoutdoors)])
+cw.writerow([str(grocery)])
+cw.writerow([str(entertainment)])

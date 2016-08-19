@@ -1,0 +1,4 @@
+import csv
+cw = csv.writer(file('testcsv.csv', 'w'))
+cw.writerow(['name'])
+
